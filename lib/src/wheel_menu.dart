@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:vision_wheel_menu/vision_wheel_menu.dart';
 import 'dart:math' as math;
-import 'option_button.dart';
 
 /// A circular menu widget that displays options in a wheel layout.
 ///
@@ -42,11 +41,13 @@ class WheelMenu extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.white.withOpacity(0.08),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        color: Colors.white.withAlpha((0.1 * 255).round()),
+        border: Border.all(
+          color: Colors.white.withAlpha((0.1 * 255).round()),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withAlpha((0.1 * 255).round()),
             blurRadius: 30,
             spreadRadius: 0,
           ),
@@ -64,8 +65,10 @@ class WheelMenu extends StatelessWidget {
                   height: size * 0.32,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.15),
-                    border: Border.all(color: Colors.white.withOpacity(0.2)),
+                    color: Colors.white.withAlpha((0.15 * 255).round()),
+                    border: Border.all(
+                      color: Colors.white.withAlpha((0.2 * 255).round()),
+                    ),
                   ),
                   child: Center(
                     child: Text(

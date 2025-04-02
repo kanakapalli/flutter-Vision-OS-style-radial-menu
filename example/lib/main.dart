@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 center: const Alignment(0.7, 0.7),
                 radius: 0.8,
                 colors: [
-                  const Color(0xFF5C60FF).withOpacity(0.1),
+                  const Color(0xFF5C60FF).withAlpha((0.1 * 255).round()),
                   Colors.transparent,
                 ],
                 stops: const [0.0, 1.0],
@@ -111,10 +111,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 24, vertical: 12),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Colors.white.withAlpha((0.1 * 255).round()),
                         borderRadius: BorderRadius.circular(16),
-                        border:
-                            Border.all(color: Colors.white.withOpacity(0.1)),
+                        border: Border.all(
+                            color: Colors.white.withAlpha((0.1 * 255).round())),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(0.2),

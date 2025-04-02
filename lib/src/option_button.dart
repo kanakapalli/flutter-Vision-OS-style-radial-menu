@@ -34,7 +34,7 @@ class OptionButton extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: Colors.white.withOpacity(isHovered ? 0.2 : 0.1),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withAlpha((0.1 * 255).round())),
         boxShadow: isHovered
             ? [
                 BoxShadow(
