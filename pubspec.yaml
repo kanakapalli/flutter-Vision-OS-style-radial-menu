@@ -1,0 +1,17 @@
+name: vision_wheel_menu
+description: A Vision OS-style wheel menu for Flutter applications that appears on long press.
+version: 0.1.0
+homepage: https://github.com/yourusername/vision_wheel_menu
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
